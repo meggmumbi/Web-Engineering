@@ -1,0 +1,40 @@
+@base <http://www.example.com/people/margaret> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix admin: <http://webns.net/mvcb/> .
+
+<>
+    admin:errorReportsTo <mailto:leigh@ldodds.com> ;
+    admin:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+    a foaf:PersonalProfileDocument ;
+    foaf:maker <#me> ;
+    foaf:primaryTopic <#me> .
+
+<#me>
+    a foaf:Person ;
+    foaf:family_name "Gichuhi" ;
+    foaf:givenname "Margaret" ;
+    foaf:homepage <https://655515074a4ba94ec81a8411--margaret-portfolio.netlify.app/> ;
+    foaf:knows [
+        a foaf:Person ;
+        foaf:mbox_sha1sum "3fa04ecc42974f4c07b00ae2ea8c470bff8689f8" ;
+        foaf:name "Grace"
+    ], [
+        a foaf:Person ;
+        foaf:mbox_sha1sum "c57c46f1bc0bb71ef6ab99f85b3a318fc11b021a" ;
+        foaf:name "carol"
+    ], [
+        a foaf:Person ;
+        foaf:mbox_sha1sum "068876ddb9779d2eb3a432f16c7c78e86aa7261f" ;
+        foaf:name "peter"
+    ] ;
+    foaf:mbox_sha1sum "e94df70e1a639918e22bb60845f9af07ea750986" ;
+    foaf:name "Margaret Gichuhi" ;
+    foaf:nick "Mumbi" ;
+    foaf:phone <tel:0721324856> ;
+    foaf:schoolHomepage <https://www.jkuat.ac.ke/> ;
+    foaf:title "Miss" ;
+    foaf:workInfoHomepage <https://kenyahmis.org/documentation/summary-national-data-warehouse/> ;
+    foaf:workplaceHomepage <https://kenyahmis.org/> .
+
